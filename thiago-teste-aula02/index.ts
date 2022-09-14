@@ -63,16 +63,19 @@ const store: storeType[]   = [
   },
 ];
 const filterStore = (category: string) => {
-  return store.filter( item => item.categoria === category)
+  const getStory = store.filter( item => item.categoria === category)
     .map( item =>
-      console.log( [
+      [
         item.id,
         item.modelo,
         item.marca,
         item.categoria
-      ] , 'atividade 1'
-    ) 
+      ] 
+      
   );
+  console.log(getStory, 'atividade 1');
+  return getStory;
+  
 }
   filterStore('blusa')
 

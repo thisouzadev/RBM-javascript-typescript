@@ -27,13 +27,15 @@ const store = [
     },
 ];
 const filterStore = (category) => {
-    return store.filter(item => item.categoria === category)
-        .map(item => console.log([
+    const getStory = store.filter(item => item.categoria === category)
+        .map(item => [
         item.id,
         item.modelo,
         item.marca,
         item.categoria
-    ]));
+    ]);
+    console.log(getStory, 'atividade 1');
+    return getStory;
 };
 filterStore('blusa');
 const array = [];
@@ -46,7 +48,7 @@ const arrayMatriz = (array, max) => {
         arrayMatriz.push(array.slice(i, i += max));
     }
     arraySum(arrayMatriz);
-    console.log(arrayMatriz);
+    console.log(arrayMatriz, 'atividade 3');
     return arrayMatriz;
 };
 const arraySum = (array) => {
@@ -55,7 +57,7 @@ const arraySum = (array) => {
         arraySum.push([array[i].reduce((acc, i) => acc + i, 0)]);
     }
     ;
-    console.log(arraySum, 'sum');
+    console.log(arraySum, 'atividade 2');
     return arraySum;
 };
 arrayMatriz(array, 3);
