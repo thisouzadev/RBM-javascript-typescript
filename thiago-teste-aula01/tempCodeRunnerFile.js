@@ -13,7 +13,7 @@ for (let index = 0; index < arrayNumber.length; index++) {
     total += arrayNumber[index];
 }
 console.log(total);
-const average = (sumArray) => total / arrayNumber.length;
+const average = (sumArray) => sumArray;
 exports.average = average;
 console.log((0, exports.average)(total));
 const IMC = (weight, height) => {

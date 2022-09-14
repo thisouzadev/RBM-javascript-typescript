@@ -20,6 +20,8 @@ console.log(average(total), 'media');
 
 export const IMC = (weight: number, height: number) => {
   return weight/Math.pow(height,2)
+  let string = 'thiago'
+  string.toUpperCase
 }
 
 console.log(IMC(80, 1.70), 'imc');

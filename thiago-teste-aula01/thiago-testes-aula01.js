@@ -6,18 +6,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.IMC = exports.average = exports.sum = void 0;
 const sum = (firstNumber, secondNumber) => firstNumber + secondNumber;
 exports.sum = sum;
-console.log((0, exports.sum)(1, 1));
+console.log((0, exports.sum)(1, 1), 'soma');
 const arrayNumber = [1, 2, 3, 4, 5];
 let total = 0;
 for (let index = 0; index < arrayNumber.length; index++) {
     total += arrayNumber[index];
 }
-console.log(total);
+console.log(total, 'valor total para divisão da media');
 const average = (sumArray) => total / arrayNumber.length;
 exports.average = average;
-console.log((0, exports.average)(total));
+console.log((0, exports.average)(total), 'media');
 const IMC = (weight, height) => {
     return weight / Math.pow(height, 2);
 };
 exports.IMC = IMC;
-console.log((0, exports.IMC)(80, 1.70));
+console.log((0, exports.IMC)(80, 1.70), 'imc');
