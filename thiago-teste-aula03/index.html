@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <title>aula03
+
+  </title>
+</head>
+<body>
+  <header>
+    <div  id="container">
+    <img src="./assets/wine.svg" alt="wine">
+    <div id="containerLink">
+      <a href="http://" target="_blank" rel="noopener noreferrer">Clube</a>
+      <a href="http://" target="_blank" rel="noopener noreferrer">Loja</a>
+      <a href="http://" target="_blank" rel="noopener noreferrer">Produtores</a>
+      <a href="http://" target="_blank" rel="noopener noreferrer">Ofertas</a>
+      <a href="http://" target="_blank" rel="noopener noreferrer">Eventos</a>
+    </div>
+    <div>
+        <img src="./assets/BuscaLupa.svg" alt="lupa" id="lupa">
+      <img src="./assets/perfil.svg" alt="">
+      <img src="./assets/bitmap.png" alt="">
+    </div>
+  </div>
+  <section id="container-filter">
+  <input placeholder="pesquisar por nome" type="text" id="input-pesquisar" />
+  <select id="filter-rating-select" value="">
+    <option value="">rating</option>
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>s
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <select id="filter-country-select" value="">
+    <option value="">País</option>
+    <option value="Portugal">Portugal</option>
+    <option value="Espanha">Espanha</option>
+    <option value="Chile">Chile</option>
+  </select>
+  <button type="button" id="search-button">buscar</button>
+</section>
+  </header>
+  <div id="container-main-price">
+  <div id="form">
+    <h1>Refine sua busca</h1>
+    <p>Por Preço</p>
+    <div id="form-container">
+        <label for="Até R$ 40">
+        <input type="radio" id="Até R$ 40" name="price" value="Até R$ 40">
+         Até R$ 40</label>
+        <label for="R$ 40 A R$ 60">
+       <input type="radio" id="R$ 40 A R$ 60" name="price" value="R$ 40 A R$ 60">
+       R$ 40 A R$ 60</label>
+        <label for="R$ 100 A R$ 200">
+       <input type="radio" id="R$ 100 A R$ 200" name="price" value="R$ 100 A R$ 200">
+       R$ 100 A R$ 200</label>
+        <label for="R$ 200 A R$ 500">
+        <input type="radio" id="R$ 200 A R$ 500" name="price" value="R$ 200 A R$ 500">
+         R$ 200 A R$ 500</label>
+       <label for="Acima de 500">
+        <input type="radio" id="Acima de 500" name="price" value="Acima de 500">
+        Acima de R$ 500</label>
+        <button id="btn-salvar" type="submit">Buscar</button>
+    </div>
+  </div>
+    
+    <main id="root"></main>
+  </div>
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
