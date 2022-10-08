@@ -6,18 +6,38 @@
   <title>aula 4</title>
 </head>
 <body> 
-  <input type="text" placeholder="pesquisar por nome" id="input-pesquisar">
-  <input id="texto-ingrediente" type="text" placeholder="adicionar ingrediente">
-  <button id="criar-ingrediente">Adicionar</button>
-  <fieldset>
-    <legend>Escolha seus ingredientes</legend>
-    <div id="lista-ingredientes"></div>
-  </fieldset>
-  <button id="apaga-tudo">Limpar Lista de ingrediente</button>
-  <button id="remover-finalizados">Limpar Completos</button>
-  <button id="search-button">buscar</button>
+  <header>
+    <div>
+      <!-- <input id="texto-ingrediente" type="text" placeholder="adicionar ingrediente"> -->
+      <!-- <button id="criar-ingrediente">Adicionar</button>
+      <button id="apaga-tudo">Limpar Lista de ingrediente</button>
+      <button id="remover-finalizados">Limpar Completos</button> -->
+      <fieldset>
+        <legend>Escolha seus ingredientes</legend>
+        <div id="lista-ingredientes">
+          <input type="checkbox" id="knob butter" class="ingredient" name="interest" value="knob butter">
+          <label for="knob butter">knob butter</label>
+          <input type="checkbox" id="edible silver balls" class="ingredient" name="interest" value="edible silver balls">
+          <label for="edible silver balls">edible silver balls</label>
+          <input type="checkbox" id="beaten egg, to glaze" class="ingredient" name="interest" value="beaten egg, to glaze">
+          <label for="beaten egg, to glaze">beaten egg, to glaze</label>
+          <input type="checkbox" id="100g dark chocolate, chopped" class="ingredient" name="interest" value="100g dark chocolate, chopped">
+          <label for="100g dark chocolate, chopped">100g dark chocolate, chopped</label>
+        </div>
+      </fieldset>
+      </div>
+    <input type="text" placeholder="pesquisar por nome" id="input-pesquisar">
+    <div>
+      <button id="search-button">buscar</button>
+      <button id="todas-as-receitas">Todas as receitas</button>
+    </div>
+  </header>
+ 
   <main id="root"></main>
-  <button>mostrar mais</button>
+  
+  <footer class="footer">
+    <button id="mostrar-mais">mostrar mais</button>
+  </footer>
   <script src="./index.js" type="module"></script>
 </body>
 </html>
